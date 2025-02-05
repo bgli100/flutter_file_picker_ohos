@@ -365,9 +365,11 @@ export class FilePickerDelegate {
   }
 
   setPendingMethodCallAndResult(result: MethodResult): boolean {
+/*
     if (this.pendingResult != null) {
       return false;
     }
+*/
     this.pendingResult = result;
     return true;
   }
