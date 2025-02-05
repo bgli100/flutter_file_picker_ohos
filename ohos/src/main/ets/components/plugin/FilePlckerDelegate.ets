@@ -182,6 +182,7 @@ export class FilePickerDelegate {
           }
         }).catch((err: BusinessError) => {
           console.error('DocumentViewPicker.select failed with err: ' + JSON.stringify(err));
+          this.finishWithError("DocumentViewPicker.select(type=any)", 'DocumentViewPicker.select(type=any) failed with err: ' + JSON.stringify(err));
         });
         break
       }
@@ -207,6 +208,7 @@ export class FilePickerDelegate {
           }
         }).catch((err: BusinessError) => {
           console.error('DocumentViewPicker.select failed with err: ' + JSON.stringify(err));
+          this.finishWithError("DocumentViewPicker.select(type=custom)", 'DocumentViewPicker.select(type=custom) failed with err: ' + JSON.stringify(err));
         });
         break
       }
@@ -231,6 +233,7 @@ export class FilePickerDelegate {
           }
         }).catch((err: BusinessError) => {
           console.error('DocumentViewPicker.select failed with err: ' + JSON.stringify(err));
+          this.finishWithError("DocumentViewPicker.select(type=dir)", 'DocumentViewPicker.select(type=dir) failed with err: ' + JSON.stringify(err));
         });
         break
       }
